@@ -7,20 +7,39 @@
   "scripts": {
     "postinstall": "./build-openhex.sh",
     "start": "electron .",
-    "build": "electron-packager ."
+    "build": "electron-packager .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "alcalyn.openhex",
+    "linux": {
+      "icon": "./openhex/build/openhex-icon.png",
+      "synopsis": "OpenHex simple strategy game",
+      "category": "Game",
+      "desktop": "openhex-linux-desktop-entry.desktop"
+    },
+    "files": [
+      "openhex/build/*",
+      "openhex/build/static/*",
+      "openhex/build/static/**/*",
+      "main.js",
+      "openhex-linux-desktop-entry.desktop",
+      "LICENSE.md"
+    ],
+    "mac": {
+      "category": "openhex.game.app"
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "game"
   ],
-  "author": "GitHub",
+  "author": "Julien Maulny",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4",
-    "electron-packager": "^11.2.0"
+    "electron-builder": "^20.8.1"
   }
 }

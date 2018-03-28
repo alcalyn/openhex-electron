@@ -24,7 +24,7 @@ npm start
 Build OpenHex for your platform:
 
 ``` bash
-npm run build
+npm run dist
 ```
 
 

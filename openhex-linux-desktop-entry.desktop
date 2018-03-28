@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Game
+Encoding=UTF-8
+Name=OpenHex strategy game
+Comment=OpenHex is a simple strategy game inspired by Slay.
+Exec=OpenHex
+Icon=openhex-icon.png
+Terminal=false
