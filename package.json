@@ -19,6 +19,17 @@
       "category": "Game",
       "desktop": "openhex-linux-desktop-entry.desktop"
     },
+    "appImage": {
+      "synopsis": "OpenHex simple strategy game",
+      "category": "Game",
+      "desktop": "openhex-linux-desktop-entry.desktop"
+    },
+    "deb": {
+      "packageCategory": "Game"
+    },
+    "rpm": {
+      "icon": "./openhex/build/openhex-icon.png"
+    },
     "files": [
       "openhex/build/*",
       "openhex/build/static/*",
